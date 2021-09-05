@@ -1,0 +1,387 @@
+@import './font.scss';
+
+
+:root {
+  --primary-color: #1f3731;
+  --yellow-color: #ffb612;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.page {
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: white;
+
+    .page-menu-container {
+      border-bottom: 1px solid #eee;
+      margin: 13px 0 10px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+    }
+  }
+
+  .scroll-to-top {
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .page-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar-wrapper {
+    position: absolute;
+    right: 0;
+    top: 65px;
+    z-index: 10;
+  }
+
+  .footer-bar-wrapper {
+    padding: 0 0 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: white;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.Modal {
+  position: absolute;
+  /* top: 40px; */
+  left: 0px;
+  right: 0px;
+  bottom: 0;
+  background-color: white;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  padding: 26px 18px;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000a;
+  z-index: 20;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: all 300ms;
+  transform: translateY(100%);
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+  transform: translateY(0%);
+}
+
+// -------------- bootstrap classes -----------------------------
+
+@for $i from 1 through 20 {
+  .w-#{$i * 5} {
+    width: #{$i * 5%} !important;
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: #{$i * 8.333%} !important;
+  }
+}
+
+$displayModes: flex, block, none, inline-flex, inline-block;
+@each $mode in $displayModes {
+  .d-#{$mode} {
+    display: $mode !important;
+  }
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.mx-auto,
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mx-auto,
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.my-auto,
+.mt-auto {
+  margin-top: auto !important;
+}
+
+.my-auto,
+.mb-auto {
+  margin-bottom: auto !important;
+}
+
+// -----------------------------------------------------------------
+
+// --------------- Form Elements ------------------------------------
+
+input[type='text'],
+input[type='email'],
+input[type='number'],
+input[type='password'],
+textarea {
+  font-family: SFUIDisplay;
+  font-size: 13.9px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  color: #000000;
+  padding: 8px 16px;
+  transition: all 0.3s;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+// ------------------------------------------------------------------
+
+
+.button-container-yellow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0 16px;
+  margin: 32px 0 0 0;
+}
+
+.btn-yellow {
+  width: 100%;
+  height: 51px;
+  font-family: SFUIDisplay;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #1f3731;
+  border: 1px solid var(--yellow-color);
+  transition: all 0.3s;
+  background-color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  
+  .star {
+    margin: 0 10px 0 0;
+    color: var(--yellow-color);
+  }
+
+  &:hover {
+    background-color: var(--yellow-color);
+    .star {
+      color: #fff;
+    }
+  }
+
+  &:active {
+    background-color: #dda010;
+    .star {
+      color: #fff;
+    }
+  }
+}
+
+.btn-yellow.highlight {
+  background-color: var(--yellow-color);
+
+  &:hover {
+    background-color: #fcc33e;;
+  }
+
+  &:active {
+    background-color: #dda010;;
+  }
+}
+
+.button-container-gray {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 0 10px;
+  margin: 32px 0 0 0;
+}
+
+.btn-gray {
+  width: 100%;
+  height: 46px;
+  font-family: SFUIDisplay;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #414141;
+  border: solid 1px #414141;
+  background-color: white;
+  text-transform: uppercase;
+  
+  &:hover {
+    background-color: #414141;
+    color: white;
+  }
+
+  &:active {
+    background-color: #292828;
+    color: white;
+  }
+}
+
+.btn-gray.highlight {
+  color: #fff;
+  border: solid 1px #414141;
+  background-color: #414141;
+  
+  &:hover {
+    background-color: #616161;
+  }
+
+  &:active {
+    background-color: rgb(24, 23, 23);
+  }
+}
+
+.button-container-darkblue {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 10px;
+  margin: 32px 0 0 0;
+  width: 100%;
+}
+
+.btn-darkblue {
+  width: 100%;
+  height: 46px;
+  font-family: SFUIDisplay;
+  font-size: 12px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.6px;
+  text-align: center;
+  color: #203731;
+  border: solid 1px #203731;
+  background-color: #fff;
+  text-transform: uppercase;
+  
+  &:hover {
+    background-color: #203731;
+    color: white;
+  }
+
+  &:active {
+    background-color: #292828;
+    color: white;
+  }
+
+  &.highlight {
+    color: #fff;
+    border: solid 1px #203731;
+    background-color: #203731;
+    
+    &:hover {
+      background-color: #335249;
+    }
+  
+    &:active {
+      background-color: #182c27;
+    }
+  }
+}
+
+// ------------ Custom scroll bar ----------------------------
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.switch-wrapper {
+  position: relative;
+
+  &>div {
+    position: absolute;
+    width: 100%;
+  }
+}

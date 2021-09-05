@@ -1,0 +1,41 @@
+.mobile-input-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  input {
+    height: 50px;
+    padding: 0 10px;
+    font-family: SFUIDisplay;
+    font-size: 15px;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    outline: none;
+    width: 100%;
+    caret-color: #0088cc;
+
+    &:focus {
+      border-bottom: 1px solid #666;
+    }
+  }
+
+  .clear {
+    position: absolute;
+    right: 10px;
+    font-size: 24px;
+    color: #999;
+    cursor: pointer;
+    top: calc(50% - 12px);
+
+    &:hover {
+      color: #666;
+    }
+
+    &:active {
+      color: #333;
+    }
+  }
+}

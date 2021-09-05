@@ -1,0 +1,45 @@
+.nav-panel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .nav-menu-item {
+    display: flex;
+    height: 50px;
+    margin-left: 32px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e7e7e7;
+    cursor: pointer;
+    color: #000;
+    position: relative;
+
+    .f7-icons {
+      color: #aeaeae;
+      font-size: 18px;
+    }
+
+    &:hover {
+      color: var(--yellow-color);
+    }
+
+    .icon {
+      color: var(--yellow-color);
+      position: absolute;
+      left: -25px;
+    }
+  }
+
+  .sub-menu-content {
+    display: inline-block;
+    height: 0 !important;
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+
+  .is-visible {
+    display: inline-block;
+    height: unset;
+    transition: all 0.2s;
+  }
+}

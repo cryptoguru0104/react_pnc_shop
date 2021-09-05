@@ -1,0 +1,30 @@
+h4 {
+  margin: 0 0 5px 0;
+  font-family: SFUIDisplay;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: 0.22px;
+  color: #333333;
+}
+
+.in-circle {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.color-selector-body {
+  display: flex;
+  gap: 7px;
+}
+
+.out-circle {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 2px;
+  border: 0px solid #ffb612;
+}

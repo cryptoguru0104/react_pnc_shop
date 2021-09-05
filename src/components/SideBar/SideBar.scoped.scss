@@ -1,0 +1,51 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sidebar-item {
+  width: 38px;
+  height: 68px;
+  background-color: #414141;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  position: relative;
+  border: none;
+  transition: all 0.3s;
+  cursor: pointer;
+
+  &.active {
+    background-color: #1f3731;
+  }
+
+  &:hover:not(:active) {
+    background-color: #5a5959;
+  }
+}
+
+.icon {
+  color: white;
+  font-size: 24px;
+}
+
+.badge {
+  display: block;
+  width: 14px;
+  height: 14px;
+  text-align: center;
+  line-height: 14px;
+  font-size: 9px;
+  color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+
+  &.yellow {
+    background: #ffb612
+  }
+}

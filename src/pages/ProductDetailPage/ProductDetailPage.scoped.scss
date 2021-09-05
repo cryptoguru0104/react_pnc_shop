@@ -1,0 +1,40 @@
+.product-detail-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 80px 0;
+}
+
+.detail-wrapper {
+}
+
+.button-container-yellow {
+  .star {
+    margin: 0 10px 0 0;
+    color: #ffb612;
+    font-size: 16px;
+  }
+}
+
+.product-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 0 49px 0 15px;
+
+  .image-card-wrapper {
+    grid-column: 1 / span 2;
+  }
+}
+
+.related-header {
+  margin: 23px 0;
+  font-family: SFUIDisplay;
+  font-size: 24px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.29px;
+  color: #333333;
+}

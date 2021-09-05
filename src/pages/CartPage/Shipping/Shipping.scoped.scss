@@ -1,0 +1,84 @@
+.container {
+  padding: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0 0 10px 0;
+
+  h2 {
+    height: 32px;
+    margin: 0;
+    font-family: SFUIDisplay;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.24px;
+    color: #333333;
+  }
+
+  .name {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding: 0 10px;
+  margin: 32px 0 0 0;
+
+  button {
+    width: 100%;
+    height: 46px;
+    font-family: SFUIDisplay;
+    font-size: 12px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #414141;
+    border: solid 1px #414141;
+    background-color: white;
+    text-transform: uppercase;
+    
+    &:hover {
+      background-color: #414141;
+      color: white;
+    }
+
+    &:active {
+      background-color: #292828;
+      color: white;
+    }
+  }
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 19px 0 0 0;
+
+  a {
+    font-family: SFUIDisplay;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: center;
+    color: #007aff;
+    text-decoration: underline;
+  }
+}

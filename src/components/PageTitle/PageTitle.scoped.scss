@@ -1,0 +1,33 @@
+.page-title {
+  background: #203731;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+}
+
+.return {
+  position: absolute;
+  color: #fff;
+  border: none;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  cursor: pointer;
+  left: 5px;
+  top: 11px;
+  transition: all 0.3s;
+
+  &:hover:not(:active) {
+    background: #fff2;
+  }
+
+  .fa {
+    font-size: 16px;
+  }
+}

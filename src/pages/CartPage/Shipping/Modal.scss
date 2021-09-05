@@ -1,0 +1,243 @@
+.Modal.select-payment {
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      font-family: SFUIDisplay;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+
+    a {
+      color: #1685ff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .method-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0 12px 0;
+
+    .item {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      cursor: pointer;
+      border-radius: 10px;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &:active {
+        background-color: #e0e0e0;
+      }
+
+      .img-wrapper {
+        width: 60px;
+        img {
+          width: 100%;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 0 12px;
+
+        .name {
+          margin: 0;
+          font-family: SFUIDisplay;
+          font-size: 16px;
+          font-weight: 600;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: #000000;
+        }
+
+        .number {
+          margin: 0;
+          font-family: SFUIDisplay;
+          font-size: 14px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.71;
+          letter-spacing: normal;
+          color: #000000;
+        }
+      }
+
+      .checkmark-wrapper {
+        margin: 0 0 0 auto;
+        height: fit-content;
+        img {
+          width: 20px;
+          display: block;
+        }
+      }
+    }
+  }
+
+  .add {
+    display: flex;
+    align-items: center;
+
+    button {
+      width: 50px;
+      height: 32px;
+      border-radius: 5px;
+      border: solid 1px #979797;
+      background-color: #ffffff;
+      color:  #979797;
+      font-size: 24px;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+
+      &:active {
+        background-color: #e0e0e0;
+      }
+    }
+
+    span {
+      margin: 0 0 0 17px;
+      font-family: SFUIDisplay;
+      font-size: 16px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #000000;
+    }
+  }
+}
+
+.Modal.add-payment {
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      font-family: SFUIDisplay;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+
+    a {
+      color: #1685ff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .adding-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 23px 0 0 0;
+    
+    input {
+      height: 61px;
+      font-family: SFUIDisplay;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: #333;
+    }
+  }
+
+  .button-container-yellow {
+    margin: 9px 0 0 0;
+  }
+}
+
+.Modal.select-payment-type {
+  height: 624px;
+  display: flex;
+  flex-direction: column;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h3 {
+      margin: 0;
+      font-family: SFUIDisplay;
+      font-size: 20px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+
+    a {
+      color: #1685ff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .payment-type-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 23px 0 0 0;
+
+    .item {
+      border: 1px solid #ccc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 61px;
+      padding: 0 30px 0 25px;
+
+      img {
+        height: 22px;
+        display: block;
+      }
+    }
+  }
+}

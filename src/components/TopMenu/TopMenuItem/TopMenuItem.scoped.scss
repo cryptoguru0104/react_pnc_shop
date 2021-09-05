@@ -1,0 +1,32 @@
+.top-menu-item {
+  display: inline-block;
+  height: 100%;
+
+  .top-menu-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    font-family: SFUIDisplay;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #444444;
+
+    span {
+      margin-right: 5px;
+      font-size: 14px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .f7-icons {
+    font-size: 16px;
+  }
+}

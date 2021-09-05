@@ -1,0 +1,13 @@
+.navsub-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-left: 39px;
+  justify-content: center;
+  border-bottom: 2px solid #e7e7e7;
+  color: #000;
+
+  &:hover {
+    color: var(--yellow-color);
+  }
+}

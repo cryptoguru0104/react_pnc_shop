@@ -1,0 +1,103 @@
+
+:root {
+  --primary-color: #1f3731;
+  --yellow-color: #ffb612;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.ticket-login-page {
+  .page-body {
+    padding: 27px 16px 16px 16px;
+
+    h2 {
+      font-family: SFUIDisplay;
+      font-size: 20px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #444444;
+      margin: 0 0 14px 0;
+      text-align: center;
+    }
+
+    span {
+      font-family: SFUIDisplay;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: #888;
+      margin: 0;
+      text-align: center;
+    }
+
+    form {
+      margin: 80px 0 0 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      a {
+        margin: 24px 0 0 0;
+        font-family: SFUIDisplay;
+        font-size: 13px;
+        color: #1685ff;
+      }
+
+      input {
+        width: 100%;
+        font-family: SFUIDisplay;
+        font-size: 15px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 0 3px;
+        height: 40px;
+        outline: none;
+      }
+
+      .btn-darkblue {
+        margin: 30px 0 0 0;
+        border-radius: 8px;
+        border: none;
+      }
+
+      .btn-darkblue[disabled] {
+        margin: 30px 0 0 0;
+        border-radius: 8px;
+        border: none;
+        background-color: #E1E5E8;
+      }
+    }
+
+    .terms-conditions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: auto 0 0 0;
+      gap: 10px;
+
+      img {
+        height: 22px;
+      }
+
+      a {
+        font-family: SFUIDisplay;
+        font-size: 13px;
+        color: #1685ff;
+      }
+    }
+  }
+}

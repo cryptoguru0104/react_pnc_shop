@@ -1,0 +1,113 @@
+.shipping-wizard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-container {
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: relative;
+
+  .line {
+    height: 1px;
+    background-color: rgba(38, 50, 56, 0.12);
+    position: absolute;
+    top: 13px;
+    left: 30px;
+    right: 30px;
+    z-index: 1;
+  }
+
+  .step-container {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 7px;
+
+      .no {
+        width: 24px;
+        height: 24px;
+        background: #cfd8dc;
+        color: white;
+        line-height: 24px;
+        text-align: center;
+        font-family: SFUIDisplay;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+        display: block;
+      }
+
+      .title {
+        opacity: 0.56;
+        font-family: SFUIDisplay;
+        font-size: 14px;
+        font-weight: 500;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #455a64;
+        display: block;
+      }
+
+      .checkmark {
+        width: 24px;
+        height: 24px;
+        background: #ffb612;
+        color: #1f3731;
+        line-height: 24px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        border-radius: 50%;
+        cursor: pointer;
+        display: none;
+      }
+
+      &.passed {
+        .title {
+          opacity: 1;
+          color: #1f3731;
+        }
+
+        .no {
+          display: none;
+        }
+
+        .checkmark {
+          display: block;
+        }
+      }
+
+      &.progress {
+        .no {
+          background: #1f3731;
+        }
+        .title {
+          opacity: 1;
+          color: #1f3731;
+        }
+      }
+    }
+  }
+}

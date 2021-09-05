@@ -1,0 +1,46 @@
+.ticket-login-page {
+  .page-body {
+    padding: 0 16px;
+
+    form {
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .comment {
+        width: 100%;
+        text-align: center;
+        font-family: SFUIDisplay;
+        font-size: 14px;
+        color: #666;
+        line-height: 35px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      input {
+        width: 100%;
+        font-family: SFUIDisplay;
+        font-size: 15px;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 0 3px;
+        height: 40px;
+        outline: none;
+      }
+
+      .btn-wrapper {
+        width: 100%;
+        margin: 10px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+    }
+  }
+}

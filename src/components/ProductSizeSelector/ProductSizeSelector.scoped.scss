@@ -1,0 +1,45 @@
+h4 {
+  margin: 0 0 5px 0;
+  font-family: SFUIDisplay;
+  font-size: 18px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: 0.22px;
+  color: #333333;
+}
+
+.size-selector-body {
+  display: flex;
+  gap: 7px;
+
+  a {
+    width: 46px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    background-color: #eeeeee;
+    color: #455a64;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.5s;
+
+    &.selected {
+      background-color: #1f3731;
+      color: #fff;
+    }
+
+    &:hover:not(:active) {
+      background-color: #1f3731;
+      color: #fff;
+    }
+
+    &:active {
+      background-color: #12221e;
+      color: #fff;
+    }
+  }
+
+
+}

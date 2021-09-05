@@ -1,0 +1,15 @@
+.menu-content {
+  display: flex;
+  position: absolute;
+  width: 188px;
+  justify-content: center;
+  border: 1px solid #ccc;
+  z-index: 1;
+  background: white;
+  margin: 12px 0 0 0;
+  box-shadow: 2px 2px 5px #0003;
+
+  .menu-container {
+    width: 100%;
+  }
+}

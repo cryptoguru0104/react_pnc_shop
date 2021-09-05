@@ -1,0 +1,16 @@
+.shop-page {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 16px 0;
+}
+
+.product-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+  .image-card-wrapper {
+    grid-column: 1 / span 2;
+  }
+}

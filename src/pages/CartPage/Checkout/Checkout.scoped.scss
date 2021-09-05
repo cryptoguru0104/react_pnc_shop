@@ -1,0 +1,141 @@
+.checkout-component {
+  padding: 0 0 16px 0;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+h2 {
+  height: 32px;
+  margin: 0 0 5px 13px;
+  font-family: SFUIDisplay;
+  font-size: 20px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.6;
+  letter-spacing: 0.24px;
+  color: #333333;
+}
+
+.item {
+  padding: 14px 34px 18px 26px;
+  display: flex;
+
+  &.input {
+    flex-direction: column;
+    gap: 10px;
+
+    .balance {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      justify-content: center;
+
+      .balance-value {
+        font-family: SFUIDisplay;
+        font-size: 16px;
+        font-weight: 600;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+      }
+
+      .comment {
+        font-family: SFUIDisplay;
+        font-size: 14px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        color: #000000;
+      }
+    }
+  }
+
+  &.order-total {
+    flex-direction: column;
+    gap: 2px;
+
+    .label {
+      margin: 0 0 5px 0;
+    }
+
+    .order-item {
+      display: flex;
+      justify-content: space-between;
+
+      font-family: SFUIDisplay;
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: #000000;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    background-color: #f5f5f5;
+  }
+
+  .label {
+    width: 100px;
+    height: 24px;
+    font-family: SFUIDisplay;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #000000;
+  }
+
+  .value {
+    width: 170px;
+    font-family: SFUIDisplay;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+
+    .comment {
+      width: 100%;
+      margin: 2px 0 0 0;
+      font-family: SFUIDisplay;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.67;
+      letter-spacing: normal;
+      color: #000000;
+    }
+  }
+
+  .action {
+    margin: 0 0 0 auto;
+    height: 24px;
+    font-family: SFUIDisplay;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: right;
+    color: #1685ff;
+  }
+}
